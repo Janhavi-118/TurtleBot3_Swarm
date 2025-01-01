@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: swarm_locate
+Version: 0.0.0
+Summary: Swarm robotics project for locating a target using TurtleBot3 robots
+Maintainer: janhavi
+Maintainer-email: janhavi@todo.todo
+License: Apache-2.0
+Requires-Dist: setuptools

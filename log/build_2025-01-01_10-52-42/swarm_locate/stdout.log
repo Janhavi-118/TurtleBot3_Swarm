@@ -1,0 +1,7 @@
+running egg_info
+writing ../../build/swarm_locate/swarm_locate.egg-info/PKG-INFO
+writing dependency_links to ../../build/swarm_locate/swarm_locate.egg-info/dependency_links.txt
+deleting ../../build/swarm_locate/swarm_locate.egg-info/entry_points.txt
+writing requirements to ../../build/swarm_locate/swarm_locate.egg-info/requires.txt
+writing top-level names to ../../build/swarm_locate/swarm_locate.egg-info/top_level.txt
+reading manifest file '../../build/swarm_locate/swarm_locate.egg-info/SOURCES.txt'
