@@ -1,0 +1,24 @@
+[0.543s] Invoking command in '/home/janhavi/TurtleBot3_Swarm/src/my_gazebo': PYTHONPATH=/home/janhavi/TurtleBot3_Swarm/build/my_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/janhavi/TurtleBot3_Swarm/install/my_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_gazebo build --build-base /home/janhavi/TurtleBot3_Swarm/build/my_gazebo/build install --record /home/janhavi/TurtleBot3_Swarm/build/my_gazebo/install.log --single-version-externally-managed install_data
+[0.631s] /home/janhavi/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.631s]   warnings.warn(msg)
+[0.675s] running egg_info
+[0.682s] writing ../../build/my_gazebo/my_gazebo.egg-info/PKG-INFO
+[0.683s] writing dependency_links to ../../build/my_gazebo/my_gazebo.egg-info/dependency_links.txt
+[0.683s] writing requirements to ../../build/my_gazebo/my_gazebo.egg-info/requires.txt
+[0.683s] writing top-level names to ../../build/my_gazebo/my_gazebo.egg-info/top_level.txt
+[0.698s] reading manifest file '../../build/my_gazebo/my_gazebo.egg-info/SOURCES.txt'
+[0.699s] writing manifest file '../../build/my_gazebo/my_gazebo.egg-info/SOURCES.txt'
+[0.699s] running build
+[0.699s] running build_py
+[0.699s] copying my_gazebo/__init__.py -> /home/janhavi/TurtleBot3_Swarm/build/my_gazebo/build/lib/my_gazebo
+[0.699s] running install
+[0.701s] running install_lib
+[0.709s] running install_data
+[0.709s] copying resource/my_gazebo -> /home/janhavi/TurtleBot3_Swarm/install/my_gazebo/share/ament_index/resource_index/packages
+[0.709s] copying package.xml -> /home/janhavi/TurtleBot3_Swarm/install/my_gazebo/share/my_gazebo
+[0.709s] running install_egg_info
+[0.717s] removing '/home/janhavi/TurtleBot3_Swarm/install/my_gazebo/lib/python3.10/site-packages/my_gazebo-0.0.0-py3.10.egg-info' (and everything under it)
+[0.717s] Copying ../../build/my_gazebo/my_gazebo.egg-info to /home/janhavi/TurtleBot3_Swarm/install/my_gazebo/lib/python3.10/site-packages/my_gazebo-0.0.0-py3.10.egg-info
+[0.718s] running install_scripts
+[0.780s] writing list of installed files to '/home/janhavi/TurtleBot3_Swarm/build/my_gazebo/install.log'
+[0.796s] Invoked command in '/home/janhavi/TurtleBot3_Swarm/src/my_gazebo' returned '0': PYTHONPATH=/home/janhavi/TurtleBot3_Swarm/build/my_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/janhavi/TurtleBot3_Swarm/install/my_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_gazebo build --build-base /home/janhavi/TurtleBot3_Swarm/build/my_gazebo/build install --record /home/janhavi/TurtleBot3_Swarm/build/my_gazebo/install.log --single-version-externally-managed install_data

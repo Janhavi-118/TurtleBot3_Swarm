@@ -4,7 +4,6 @@ setup.py
 ../../build/my_gazebo/my_gazebo.egg-info/PKG-INFO
 ../../build/my_gazebo/my_gazebo.egg-info/SOURCES.txt
 ../../build/my_gazebo/my_gazebo.egg-info/dependency_links.txt
-../../build/my_gazebo/my_gazebo.egg-info/entry_points.txt
 ../../build/my_gazebo/my_gazebo.egg-info/requires.txt
 ../../build/my_gazebo/my_gazebo.egg-info/top_level.txt
 ../../build/my_gazebo/my_gazebo.egg-info/zip-safe

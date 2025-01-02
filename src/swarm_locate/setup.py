@@ -17,7 +17,6 @@ setup(
     maintainer_email='janhavi@todo.todo',
     description='Swarm robotics project for locating a target using TurtleBot3 robots',
     license='Apache-2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
         ],
