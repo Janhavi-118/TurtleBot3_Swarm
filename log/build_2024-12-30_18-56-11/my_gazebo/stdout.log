@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/my_gazebo/my_gazebo.egg-info
+writing ../../build/my_gazebo/my_gazebo.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_gazebo/my_gazebo.egg-info/dependency_links.txt
+writing entry points to ../../build/my_gazebo/my_gazebo.egg-info/entry_points.txt
+writing requirements to ../../build/my_gazebo/my_gazebo.egg-info/requires.txt
+writing top-level names to ../../build/my_gazebo/my_gazebo.egg-info/top_level.txt
+writing manifest file '../../build/my_gazebo/my_gazebo.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_gazebo/my_gazebo.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_gazebo/my_gazebo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/janhavi/turtle_swarm/build/my_gazebo/build
+creating /home/janhavi/turtle_swarm/build/my_gazebo/build/lib
+creating /home/janhavi/turtle_swarm/build/my_gazebo/build/lib/my_gazebo
+copying my_gazebo/__init__.py -> /home/janhavi/turtle_swarm/build/my_gazebo/build/lib/my_gazebo
+running install
+running install_lib
+creating /home/janhavi/turtle_swarm/install/my_gazebo/lib/python3.10/site-packages/my_gazebo
+copying /home/janhavi/turtle_swarm/build/my_gazebo/build/lib/my_gazebo/__init__.py -> /home/janhavi/turtle_swarm/install/my_gazebo/lib/python3.10/site-packages/my_gazebo
+byte-compiling /home/janhavi/turtle_swarm/install/my_gazebo/lib/python3.10/site-packages/my_gazebo/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/janhavi/turtle_swarm/install/my_gazebo/share/ament_index
+creating /home/janhavi/turtle_swarm/install/my_gazebo/share/ament_index/resource_index
+creating /home/janhavi/turtle_swarm/install/my_gazebo/share/ament_index/resource_index/packages
+copying resource/my_gazebo -> /home/janhavi/turtle_swarm/install/my_gazebo/share/ament_index/resource_index/packages
+copying package.xml -> /home/janhavi/turtle_swarm/install/my_gazebo/share/my_gazebo
+running install_egg_info
+Copying ../../build/my_gazebo/my_gazebo.egg-info to /home/janhavi/turtle_swarm/install/my_gazebo/lib/python3.10/site-packages/my_gazebo-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/janhavi/turtle_swarm/build/my_gazebo/install.log'
