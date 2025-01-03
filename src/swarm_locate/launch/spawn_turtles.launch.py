@@ -23,7 +23,7 @@ def generate_launch_description():
     
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
 
-    world_path = os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'worlds', 'turtlebot3_house.world')
+    world_path = '/home/janhavi/TurtleBot3_Swarm/src/my_gazebo/worlds/turtlebot3_house.world'
     
     gazebo_server = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
