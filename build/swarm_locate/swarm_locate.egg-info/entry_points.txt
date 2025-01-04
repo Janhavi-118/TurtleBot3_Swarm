@@ -1,0 +1,4 @@
+[console_scripts]
+ball_navigation = swarm_locate.ball_navigation:main
+detect_ball = swarm_locate.detect_ball:main
+wall_follow = swarm_locate.wall_follow:main
