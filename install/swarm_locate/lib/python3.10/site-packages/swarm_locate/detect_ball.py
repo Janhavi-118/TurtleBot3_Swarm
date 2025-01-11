@@ -5,6 +5,7 @@ from std_msgs.msg import Bool
 from geometry_msgs.msg import PoseStamped
 import cv2
 from cv_bridge import CvBridge
+from rclpy.executors import MultiThreadedExecutor
 
 class BallDetection(Node):
     def __init__(self, robot_namespace):
@@ -57,20 +58,36 @@ class BallDetection(Node):
         
         # Publish the robot's pose
         self.pose_pub.publish(robot_pose)
-        self.get_logger().info(f"Published pose: x={robot_pose.pose.position.x}, y={robot_pose.pose.position.y}")
+        #self.get_logger().info(f"Published pose: x={robot_pose.pose.position.x}, y={robot_pose.pose.position.y}")
 
 def main(args=None):
     rclpy.init(args=args)
     
     # List of robots, adjust the namespace accordingly
     robots = ['tb3_0', 'tb3_1', 'tb3_2', 'tb3_3']
+    node_0 = BallDetection(robots[0])
+    node_1 = BallDetection(robots[1])
+    node_2 = BallDetection(robots[2])
+    node_3 = BallDetection(robots[3])
 
-    # Create nodes for each robot
-    for robot in robots:
-        ball_detection_node = BallDetection(robot)
-        rclpy.spin(ball_detection_node)
+    executor = MultiThreadedExecutor()
 
-    rclpy.shutdown()
+    executor.add_node(node_0)
+    executor.add_node(node_1)
+    executor.add_node(node_2)
+    executor.add_node(node_3)
+
+    try:
+        executor.spin()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        # Shutdown nodes and the executor
+        node_0.destroy_node()
+        node_1.destroy_node()
+        node_2.destroy_node()
+        node_3.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

@@ -4,6 +4,7 @@ from sensor_msgs.msg import LaserScan
 from rclpy.node import Node
 import time
 from std_msgs.msg import Bool
+from rclpy.executors import MultiThreadedExecutor
 
 class BallFoundSubscriber(Node):
     def __init__(self):
@@ -104,14 +105,28 @@ def main(args=None):
     ball_found_subscriber = BallFoundSubscriber()
     if ball_found_subscriber.ball_found:
         robots = ['tb3_0', 'tb3_1', 'tb3_2', 'tb3_3']  # List of robots
-        goal_nodes = []
-        for robot in robots:
-            # Start a node for each robot to listen for the common goal pose topic
-            goal_subscriber = GoalPoseSubscriber(robot)
-            goal_nodes.append(goal_subscriber)
-            
-        for goal_subscriber in goal_nodes:
-            rclpy.spin(goal_subscriber)
+        node_0 = GoalPoseSubscriber(robots[0])
+        node_1 = GoalPoseSubscriber(robots[1])
+        node_2 = GoalPoseSubscriber(robots[2])
+        node_3 = GoalPoseSubscriber(robots[3])
 
+        executor = MultiThreadedExecutor()
+
+        executor.add_node(node_0)
+        executor.add_node(node_1)
+        executor.add_node(node_2)
+        executor.add_node(node_3)
+
+        try:
+            executor.spin()
+        except KeyboardInterrupt:
+            pass
+        finally:
+            # Shutdown nodes and the executor
+            node_0.destroy_node()
+            node_1.destroy_node()
+            node_2.destroy_node()
+            node_3.destroy_node()
+            rclpy.shutdown()
 if __name__ == '__main__':
     main()

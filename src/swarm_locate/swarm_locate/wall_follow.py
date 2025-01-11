@@ -3,11 +3,12 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist, PoseStamped
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Bool
+from rclpy.executors import MultiThreadedExecutor
 
 class WallTracing(Node):
     def __init__(self, robot_namespace: str):
         super().__init__(f'{robot_namespace}_wall_tracing')
-
+        self.get_logger().info(f"the bot tracing the wall is {self.get_name()}")
         # Publisher for cmd_vel within each robot's namespace
         self.cmd_vel_pub = self.create_publisher(Twist, f'{robot_namespace}/cmd_vel', 10)
         
@@ -53,6 +54,7 @@ class WallTracing(Node):
         """Publish twist command to move robot, unless ball is found."""
         if not self.ball_found:
             self.cmd_vel_pub.publish(self.twist)
+            self.get_logger().info(f"Published twist for {self.get_name()}: {self.twist}")
 
     def stop_robot(self):
         """Stop the robot if the ball is found."""
@@ -65,14 +67,30 @@ def main(args=None):
 
     # List of robot namespaces
     robots = ['tb3_0', 'tb3_1', 'tb3_2', 'tb3_3']
-    wall_tracing_nodes = []
-    for robot in robots:
-        # Create a node for each robot with its unique namespace
-        wall_tracing_node = WallTracing(robot)
-        wall_tracing_nodes.append(wall_tracing_node)
+    # Create a node for each robot with its unique namespace
+    node_0 = WallTracing(robots[0])
+    node_1 = WallTracing(robots[1])
+    node_2 = WallTracing(robots[2])
+    node_3 = WallTracing(robots[3])
 
-    for node in wall_tracing_nodes:
-        rclpy.spin(node)
+    executor = MultiThreadedExecutor()
 
+    executor.add_node(node_0)
+    executor.add_node(node_1)
+    executor.add_node(node_2)
+    executor.add_node(node_3)
+
+    try:
+        executor.spin()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        # Shutdown nodes and the executor
+        node_0.destroy_node()
+        node_1.destroy_node()
+        node_2.destroy_node()
+        node_3.destroy_node()
+        rclpy.shutdown()
+        
 if __name__ == '__main__':
     main()
