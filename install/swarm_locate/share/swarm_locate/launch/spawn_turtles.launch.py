@@ -51,7 +51,7 @@ def generate_launch_description():
         executable='spawn_entity.py',
         arguments=[
             '-entity', 'tb3_0',
-            '-x', '1.0', '-y', '1.5', '-z', '0.01',
+            '-x', '4.0', '-y', '1.5', '-z', '0.01',
             '-file', urdf_path,
             '-robot_namespace', 'tb3_0'
         ],
@@ -73,7 +73,7 @@ def generate_launch_description():
         executable='spawn_entity.py',
         arguments=[
             '-entity', 'tb3_2',
-            '-x', '2.0', '-y', '-2.0', '-z', '0.01',
+            '-x', '-7.0', '-y', '2.0', '-z', '0.01',
             '-file', urdf_path,
             '-robot_namespace', 'tb3_2'
         ],
@@ -84,7 +84,7 @@ def generate_launch_description():
         executable='spawn_entity.py',
         arguments=[
             '-entity', 'tb3_3',
-            '-x', '-4.0', '-y', '5.0', '-z', '0.01',
+            '-x', '-4.0', '-y', '0.25', '-z', '0.01',
             '-file', urdf_path,
             '-robot_namespace', 'tb3_3'
         ],

@@ -1,0 +1,31 @@
+running egg_info
+writing ../../build/swarm_locate/swarm_locate.egg-info/PKG-INFO
+writing dependency_links to ../../build/swarm_locate/swarm_locate.egg-info/dependency_links.txt
+writing entry points to ../../build/swarm_locate/swarm_locate.egg-info/entry_points.txt
+writing requirements to ../../build/swarm_locate/swarm_locate.egg-info/requires.txt
+writing top-level names to ../../build/swarm_locate/swarm_locate.egg-info/top_level.txt
+reading manifest file '../../build/swarm_locate/swarm_locate.egg-info/SOURCES.txt'
+writing manifest file '../../build/swarm_locate/swarm_locate.egg-info/SOURCES.txt'
+running build
+running build_py
+copying swarm_locate/detect_ball.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+copying swarm_locate/wall_follow.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+copying swarm_locate/ball_navigation.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+copying swarm_locate/__init__.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+running install
+running install_lib
+copying /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate/ball_navigation.py -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate
+byte-compiling /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate/ball_navigation.py to ball_navigation.cpython-310.pyc
+running install_data
+copying resource/swarm_locate -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/ament_index/resource_index/packages
+copying package.xml -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/swarm_locate
+copying launch/spawn_turtles.launch.py -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/swarm_locate/launch
+copying launch/swarm_behaviour.launch.py -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/swarm_locate/launch
+running install_egg_info
+removing '/home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/swarm_locate/swarm_locate.egg-info to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ball_navigation script to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/swarm_locate
+Installing detect_ball script to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/swarm_locate
+Installing wall_follow script to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/swarm_locate
+writing list of installed files to '/home/janhavi/TurtleBot3_Swarm/build/swarm_locate/install.log'

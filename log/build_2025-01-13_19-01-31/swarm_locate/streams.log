@@ -1,0 +1,33 @@
+[0.550s] Invoking command in '/home/janhavi/TurtleBot3_Swarm/src/swarm_locate': PYTHONPATH=/home/janhavi/TurtleBot3_Swarm/build/swarm_locate/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/swarm_locate build --build-base /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build install --record /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/install.log --single-version-externally-managed install_data
+[0.701s] running egg_info
+[0.710s] writing ../../build/swarm_locate/swarm_locate.egg-info/PKG-INFO
+[0.710s] writing dependency_links to ../../build/swarm_locate/swarm_locate.egg-info/dependency_links.txt
+[0.710s] writing entry points to ../../build/swarm_locate/swarm_locate.egg-info/entry_points.txt
+[0.710s] writing requirements to ../../build/swarm_locate/swarm_locate.egg-info/requires.txt
+[0.710s] writing top-level names to ../../build/swarm_locate/swarm_locate.egg-info/top_level.txt
+[0.729s] reading manifest file '../../build/swarm_locate/swarm_locate.egg-info/SOURCES.txt'
+[0.730s] writing manifest file '../../build/swarm_locate/swarm_locate.egg-info/SOURCES.txt'
+[0.730s] running build
+[0.730s] running build_py
+[0.730s] copying swarm_locate/detect_ball.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+[0.730s] copying swarm_locate/wall_follow.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+[0.730s] copying swarm_locate/ball_navigation.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+[0.730s] copying swarm_locate/__init__.py -> /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate
+[0.731s] running install
+[0.734s] running install_lib
+[0.743s] copying /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build/lib/swarm_locate/detect_ball.py -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate
+[0.744s] byte-compiling /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate/detect_ball.py to detect_ball.cpython-310.pyc
+[0.745s] running install_data
+[0.745s] copying resource/swarm_locate -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/ament_index/resource_index/packages
+[0.745s] copying package.xml -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/swarm_locate
+[0.745s] copying launch/spawn_turtles.launch.py -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/swarm_locate/launch
+[0.745s] copying launch/swarm_behaviour.launch.py -> /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/share/swarm_locate/launch
+[0.745s] running install_egg_info
+[0.755s] removing '/home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate-0.0.0-py3.10.egg-info' (and everything under it)
+[0.755s] Copying ../../build/swarm_locate/swarm_locate.egg-info to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages/swarm_locate-0.0.0-py3.10.egg-info
+[0.755s] running install_scripts
+[0.828s] Installing ball_navigation script to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/swarm_locate
+[0.828s] Installing detect_ball script to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/swarm_locate
+[0.828s] Installing wall_follow script to /home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/swarm_locate
+[0.829s] writing list of installed files to '/home/janhavi/TurtleBot3_Swarm/build/swarm_locate/install.log'
+[0.847s] Invoked command in '/home/janhavi/TurtleBot3_Swarm/src/swarm_locate' returned '0': PYTHONPATH=/home/janhavi/TurtleBot3_Swarm/build/swarm_locate/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/janhavi/TurtleBot3_Swarm/install/swarm_locate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/swarm_locate build --build-base /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/build install --record /home/janhavi/TurtleBot3_Swarm/build/swarm_locate/install.log --single-version-externally-managed install_data
