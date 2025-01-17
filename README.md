@@ -13,8 +13,6 @@ This project implements a swarm robotics system using TurtleBot3 robots in a ROS
 - Green Ball Detection: Pre-trained model from roboflow imported and used by each bot to detect the green ball.
 - Dynamic Window Approach (DWA): The DWA controller is utilized by robots that have not detected the green ball to navigate toward the position of the robot that detected it. This also helps it to avoid obstacles.
 
-![Ball Detection from Camera Feeds](assets/camera_feeds.png)
-
 ## Workflow
 1. Four bots are spawned in their given positions in the gazebo house world.
 
