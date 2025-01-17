@@ -4,12 +4,17 @@ Swarm robotics implmeneted on turtlebots in gazebo
 ## Overview
 This project implements a swarm robotics system using TurtleBot3 robots in a ROS2 Humble environment. The swarm performs the task of searching for an object, (here a green ball) and avoiding obstacles while coordinating to reach the goal in a Gazebo simulation. The primary goal is to explore and demonstrate multi-robot collaboration, detection of objects using a pre-trained machine learning model and dynamic control using Dynamic Window Approach (DWA).
 
+![Simulation](assets/working.gif)
+
 ## Features
 - Scalable Simulation: Supports spawning multiple TurtleBot3 robots in Gazebo.
 - Swarm Synchronization: Robots maintain clear and concise communication for the necessary information to be in coordination and complete task.
 - ROS2 Integration: Built with ROS2 Humble for the advanced robotic communication and control.
 - Green Ball Detection: Pre-trained model from roboflow imported and used by each bot to detect the green ball.
 - Dynamic Window Approach (DWA): The DWA controller is utilized by robots that have not detected the green ball to navigate toward the position of the robot that detected it. This also helps it to avoid obstacles.
+
+![Spawning of TurtleBot Swarm](assets/gazebo_swarm.png)
+![Ball Detection from Camera Feeds](assets/camera_feeds.png)
 
 ## Workflow
 1. Four bots are spawned in their given positions in the gazebo house world.
@@ -72,4 +77,6 @@ source install/setup.bash
 ros2 launch swarm_locate swarm_behaviour.launch.py 
 ```
 
+## RQT Graph
+![RQT Graph](assets/rqt.png)
 
